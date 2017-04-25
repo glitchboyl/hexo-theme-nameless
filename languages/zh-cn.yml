@@ -1,0 +1,32 @@
+nav:
+  home: 首页
+  archives: 归档
+  tags: 标签
+  links: 友链
+  about: 关于
+
+socials:
+  github: GitHub
+  twitter: Twitter
+  zhihu: 知乎
+  cloudmusic: 网易云音乐
+  weibo: 微博
+
+more: 阅读更多
+no_more: 没有更多了.
+
+counter:
+  articles:
+    zero: 目前没有文章.
+    one: 目前共有1篇文章.
+    other: "目前共有%d篇文章."
+
+  tags:
+    zero: 目前没有标签.
+    one: 一共有1个标签.
+    other: "一共有%d个标签."
+    when_zero: 这里空空如也, 一个标签也没有.
+
+footer:
+  powered_by: "由 %s 强力驱动"
+  use_theme: "自豪的采用 %s 主题"

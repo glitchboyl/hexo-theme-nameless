@@ -1,0 +1,32 @@
+nav:
+  home: Home
+  archives: Archives
+  tags: Tags
+  links: Links
+  about: About
+
+socials:
+  github: GitHub
+  twitter: Twitter
+  zhihu: ZhiHu
+  cloudmusic: CloudMusic
+  weibo: Weibo
+
+more: More
+no_more: No more articles.
+
+counter:
+  articles:
+    zero: Now have no articles.
+    one: Now have 1 article in total.
+    other: "Now have %d articles in total."
+
+  tags:
+    zero: No tags.
+    one: 1 tag in total.
+    other: "%d tags in total."
+    when_zero: Here is empty, no one tags.
+
+footer:
+  powered_by: "Powered by %s"
+  use_theme: "Theme - %s"

@@ -1,0 +1,46 @@
+﻿		<header class="header">
+            <div class="headimg-container">
+                <div class="head-img"></div>
+            </div>
+            <div class="navbar-container">
+                <nav class="navbar">
+                    <div class="intro-container">
+                        <div class="avatar-container">
+                            <div class="avatar">
+                                <img src="/images/avatar.png" />
+                            </div>
+                        </div>
+                        <div class="myinfo-container">
+                            <div class="name"><%= config.author %></div>
+                            <div class="sign"><%= config.subtitle %></div>
+                            <div class="social-networks">
+                                <% if(config.rss == true){ %>
+                                    <div class="item-container" data-tip="RSS"><a class="item rss" href="/atom.xml" target="_blank"></a></div>
+                                <% } %>
+                                <% for (var i in theme.socials){ %>
+                                    <div class="item-container" data-tip="<%-  __('socials.' + i) %>"><a class="item <%= i %>" href="<%= theme.socials[i] %>" target="_blank"></a></div>
+                                <% } %>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="introCard-container">
+                        <div class="intro-card">
+                            <div class="avatar-container">
+								                 <div class="avatar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-container">
+                        <div class="nav">
+                          <% for (var i in theme.nav){ %>
+							              	 <a class="nav-item <%= i %>
+                                 <% if(path.replace('index.html','').replace(/\d/g,'').replace(/\//g,'') == url_for(theme.nav[i]).replace(/\//g,'') || (i == 'home' && path.replace('index.html','').replace(/\d/g,'').replace(/\//g,'') == 'a') || (i == 'tags' && path.replace('index.html','').replace('/','').split('/')[0] == 'tags')) { %>
+                                   active
+                                   <% } %>"
+                                     href="<%- url_for(theme.nav[i]) %>"><%- __('nav.' + i) %></a>
+						               <% } %>
+                        </div>
+                    </div>
+                </nav>
+           </div>
+       </header>

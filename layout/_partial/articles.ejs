@@ -1,0 +1,21 @@
+﻿<div id="<%= post.slug %>" class="article-container">
+	<div class="article-header">
+		<%- partial('post/title') %>
+		<div class="info">
+			<%- partial('post/date') %>
+			<%- partial('post/tags') %>
+		</div>
+	</div>
+	<div class="article-body">
+		<div class="priview">
+			<% if(post.excerpt != '') {%>
+				<%- post.excerpt.replace(/^<p>/,'').replace(/<\/p>\s$/,'') %>
+			<% } else { %>
+				<%- post.content.replace(/^<p>/,'').replace(/<\/p>\s$/,'') %>
+			<% } %>
+		</div>
+		<p>
+			<a class="read-more" href="<%- url_for(post.path).match(/^\/.*[^\/]/)[0] %>"><%- __('more') %> »</a>
+		</p>
+	</div>
+</div>

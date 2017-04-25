@@ -1,0 +1,8 @@
+﻿<span class="date">
+  <% if(post.date){ %>
+    <% var getDate = function (time) { var date; !time ? date = new Date() : date = new Date(time); var year = date.getFullYear(); var mouth = date.getMonth() + 1; var day = date.getDate(); var hour = date.getHours(); var minute = date.getMinutes();var second = date.getTime() % 60000; second = (second - (second % 1000)) / 1000; var clock = hour + ':'; if (minute < 10) { clock += '0'; } clock += minute; return year + '-' + mouth + '-' + day + ' ' + clock; } %>
+    <% var timeDifference = function (time, Time) { var t = new Date(time); var T = new Date(Time); var D = T - t; var days = Math.floor(D / (24 * 3600 * 1000)); var S = D % (24 * 3600 * 1000); var hours = Math.floor(S / (3600 * 1000)); S = S % (3600 * 1000);  var minutes = Math.floor(S / (60 * 1000));S = S % (60 * 1000); var seconds = Math.round(S / 1000); return { days: days, hours: hours, minutes: minutes, seconds: seconds } } %>
+    <% var PTD = function (t) { var TD = timeDifference(t, getDate()); if (TD.days < 7) { if (TD.days == 0) { if (TD.hours == 0) {if (TD.minutes == 0) { if (TD.seconds == 0) { return '就在刚才'; } else { return '大约在' + TD.seconds + '秒之前'; } } else { return '大约在' + TD.minutes + '分钟之前'; } } else { return '大约在' + TD.hours + '小时之前'; } } else { return '大约在' + TD.days + '天之前'; } } else { return getDate(t); } } %>
+    <%- PTD(post.date) %>
+  <% } %>
+</span>

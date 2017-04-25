@@ -1,0 +1,39 @@
+<!--
+                                        , _
+ \_|)   _         _ |\     \_|)  o  _, /|/ \
+   |   / \_/|/|  |/ |/ |  |  |   | / |  |__/
+  (\__/\_/  | |_/|_/|_/ \/|/(\__/|/\/|_/| \_/
+                         (|
+-->
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <%- partial('_partial/head') %>
+    </head>
+    <body>
+        <div class="main-container">
+            <%- partial('_partial/header') %>
+            <div class="content-container">
+                <%- body %>
+            </div>
+            <%- partial('_partial/footer') %>
+        </div>
+        <%- partial('_partial/back-to-top') %>
+        <%- js(['js/liar.min','js/nameless-script']) %>
+        <script type="text/javascript">
+            document.onreadystatechange = function () {
+                LProgress.start();
+                if (document.readyState == 'complete') {
+                    LProgress.done();
+                };
+            };
+            var _Config = {
+                page: 1,
+                postLength: <%= site.posts.length %>,
+                maxPage: <% if(site.posts.length%10 != 0) { %><%- parseInt(site.posts.length/10)+1 %><% } else { %><% site.posts.length/10 %><% } %>
+            };
+        </script>
+    </body>
+</html>

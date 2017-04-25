@@ -1,0 +1,5 @@
+﻿<span class="tags">
+	<% for (var i = 0; i < post.tags.data.length; i++){ %>
+		<a class="tag" href="<%- url_for(post.tags.data[i].path).replace(/\/$/,'') %>"><%- theme.tags[post.tags.data[i].name] %></a>
+	<% } %>
+</span>

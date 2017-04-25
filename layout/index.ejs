@@ -1,0 +1,12 @@
+<section class="articles-container">
+    <% page.posts.each(function(post){ %>
+        <%- partial('_partial/articles',{post: post}) %>
+    <% }) %>
+    <% if(path=='' || path=='index.html'){ %>
+        <% if(site.posts.length>10){ %>
+            <div class='loading-more'></div>
+        <% } else { %>
+            <div class="no-more"><%- __('no_more') %></div>
+        <% } %>
+    <% } %>
+</section>

@@ -1,0 +1,5 @@
+﻿<% if(path.replace('index.html','').replace(/\//g,'').replace(/\d/g,'') == '' || path.replace('index.html','').replace(/\//g,'').replace(/\d/g,'') == 'page'){ %>
+	<a class="title" href="<%- url_for(post.path).match(/^\/.*[^\/]/)[0] %>"><%= post.title %></a>
+<% }else{ %>
+	<span class="title"><%= post.title %></span>
+<% } %>

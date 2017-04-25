@@ -1,0 +1,62 @@
+﻿<div class="links-holder">
+    <div class="column left-column">
+        <% var n = 0; %>
+        <% for (var i in linksList) { %>
+                <% if(n % 2 == 0) { %>
+                    <div>
+                        <a href="<%- linksList[i].url %>" target="_blank">
+                            <% if(!linksList[i].banner) { %>
+                                <div class="banner"></div>
+                            <% } else { %>
+                                <div class="banner-img">
+                                    <img src="/links/index/<%- i %>/banner.png"/>
+                                </div>
+                            <% } %>
+                            <div class="friend-info">
+                                <div class="avatar-img">
+                                    <% if(!linksList[i].avatar) { %>
+                                        <img src="/images/faceless.png"/>
+                                    <% } else { %>
+                                        <img src="/links/index/<%- i %>/avatar.png"/>
+                                    <% } %>
+                                </div>
+                                <div class="nickname"><%- linksList[i].nickname %></div>
+                                <div class="desc"><%- linksList[i].desc %></div>
+                            </div>
+                        </a>
+                    </div>
+               <% } %>
+               <% n++; %>
+        <% } %>
+    </div>
+    <div class="column right-column">
+        <% var n = 0; %>
+        <% for (var i in linksList) { %>
+                <% if(n % 2 == 1) { %>
+                    <div>
+                        <a href="<%- linksList[i].url %>" target="_blank">
+                            <% if(!linksList[i].banner) { %>
+                                <div class="banner"></div>
+                            <% } else { %>
+                                <div class="banner-img">
+                                    <img src="/links/index/<%- i %>/banner.png"/>
+                                </div>
+                            <% } %>
+                            <div class="friend-info">
+                                <div class="avatar-img">
+                                    <% if(!linksList[i].avatar) { %>
+                                        <img src="/images/faceless.png"/>
+                                    <% } else { %>
+                                        <img src="/links/index/<%- i %>/avatar.png"/>
+                                    <% } %>
+                                </div>
+                                <div class="nickname"><%- linksList[i].nickname %></div>
+                                <div class="desc"><%- linksList[i].desc %></div>
+                            </div>
+                        </a>
+                    </div>
+               <% } %>
+               <% n++; %>
+        <% } %>
+    </div>
+</div>

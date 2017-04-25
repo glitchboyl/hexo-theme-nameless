@@ -1,0 +1,24 @@
+﻿<div class="archives-holder">
+	<p class="total">
+		<span class="point"></span>
+		<% var postsLength = site.posts.length %>
+		<% if (postsLength == 0) { %>
+			<%- __('counter.articles.zero') %>
+		<% } else if (postsLength == 1) { %>
+			<%- __('counter.articles.one') %>
+		<% } else { %>
+			<%- __('counter.articles.other', postsLength) %>
+		<% } %>
+	</p>
+	<% if (archivesList) { %>
+		<% var last; %>
+		<% site.posts.sort('-date').each(function(post){ %>
+			<% if (last != post.date.year()){ %>
+				<% last = post.date.year() %>
+				<p class="year"><span class="point"></span><%- post.date.year() %></p>
+			<% } %>
+			<%- partial('post/archive-post', {post: post}) %>
+	<% })} else { %>
+		<p style="border-bottom: 0;"><span class="point"></span>空空如也, 还没有发表过一篇文章.</p>
+	<% } %>
+</div>

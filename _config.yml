@@ -1,0 +1,28 @@
+﻿#  Main menu navigation
+nav:
+  home: '/'
+  archives: '/archives'
+  tags: '/tags'
+  links: '/links'
+  about: '/about'
+
+# Tags title
+tags:
+  example: 例子
+
+# Social networks
+socials:
+  github: https://github.com/LonelyLiaR
+  twitter: https://twitter.com/LonelyLiaR8523
+  zhihu: https://www.zhihu.com/people/loleon-8523
+  cloudmusic: http://music.163.com/#/user/home?id=64860394
+  weibo: http://weibo.com/lonelyliar8523
+
+# Friend links
+friends:
+  example: { nickname: 'nickname', desc: 'desc', url: 'https://www.google.com/', banner: false, avatar: false }
+
+
+# Miscelaneous
+favicon: /favicon.ico
+appleicon: /apple.ico

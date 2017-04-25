@@ -1,0 +1,35 @@
+﻿<div id="<%= post.slug %>" class="article-holder">
+	<div class="article-header">
+		<%- partial('post/title') %>
+		<div class="info">
+			<%- partial('post/date') %>
+			<%- partial('post/tags') %>
+		</div>
+	</div>
+	<div class="article-body">
+		<div class="content-holder">
+			<div class="content">
+				<%- post.content.replace('<a id="more"></a>','').replace(/^<p>/,'').replace(/<\/p>\s$/,'') %>
+			</div>
+		</div>
+	</div>
+	<div class="article-footer">
+		<div class="article-nav">
+		    <% if(post.prev == undefined){ %>
+				<span class="prev none"></span>
+			<% }else{ %>
+				<span class="prev">
+					<a href="<%- url_for(post.prev.canonical_path).replace('/index.html','') %>"><%- post.prev.title %></a>
+				</span>
+			<% } %>
+		    <% if(post.next == undefined){ %>
+				<span class="next none"></span>
+			<% }else{ %>
+				<span class="next">
+					<a href="<%- url_for(post.next.canonical_path).replace('/index.html','') %>"><%- post.next.title %></a>
+				</span>
+			<% } %>
+		</div>
+	</div>
+	<%- partial('post/comments') %>
+</div>

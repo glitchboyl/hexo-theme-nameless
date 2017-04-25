@@ -1,0 +1,29 @@
+﻿<div class="tags-holder">
+    <p class="title">
+      <% var tagsLength = site.tags.length %>
+  		<% if (tagsLength == 0) { %>
+  			<%- __('counter.tags.zero') %>
+  		<% } else if (tagsLength == 1) { %>
+  			<%- __('counter.tags.one') %>
+  		<% } else { %>
+  			<%- __('counter.tags.other', tagsLength) %>
+  		<% } %>
+    </p>
+    <p>
+      <% if (tagsList) { %>
+      <% site.tags.each(function(tag){ %>
+        <a href="<%- url_for(tag.path).replace('/index.html','').replace(/\/$/,'') %>" style="
+        <% if(tag.posts.length < 3){ %>
+              color: #888888; font-size: 16px;
+          <% } else if(tag.posts.length > 3 && tag.posts.length <= 5){%>
+        color: #555555; font-size: 20px;
+        <% } else if(tag.posts.length > 5){%>
+              color: #222222; font-size: 24px;
+          <% } %>
+       "><%- theme.tags[tag.name] %>
+      </a>
+      <% })} else { %>
+        <%- __('counter.tags.when_zero') %>
+      <% } %>
+    </p>
+</div>

@@ -1,0 +1,9 @@
+﻿<div class="tag-holder">
+	<p class="tag-title"><span class="point"></span><span class="tag-name"><%- theme.tags[page.tag] %></span> 标签</p>
+	<% site.tags.each(function(tag){ %>
+		<% if(tag.name == page.tag){ %>
+		    <% tag.posts.sort('-date').each(function(post){ %>
+				<%- partial('post/archive-post', {post: post}) %>
+			<% }) %>
+	<% }}) %>
+</div>
