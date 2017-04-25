@@ -62,9 +62,9 @@ v1.0
     # value中: nickname为昵称; desc为概述; url为友链地址;
 		# banner(横幅)和avatar(头像)均为Boolean值, true时显示自主设置的图片, false时显示默认样式.
     # 自主设置的banner和avatar需在站点根目录下的links文件夹下的index文件夹里面新建一个文件夹
-		  存放一张banner.png和avatar.png. 新建的文件夹名与key一样.
+  存放一张banner.png和avatar.png. 新建的文件夹名与key一样.
     # 如下面的例子, key为example, 所以在站点根目录下的links文件夹下的index文件夹里新建
-		  一个example文件, 并放入banner.png和avatar.png就完成自主设置了.
+  一个example文件, 并放入banner.png和avatar.png就完成自主设置了.
   	friends:
     	example: { nickname: 'nickname', desc: 'desc', url: 'https://www.google.com/', banner: false, avatar: false }
 
