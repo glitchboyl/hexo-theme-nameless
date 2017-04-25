@@ -1,9 +1,9 @@
-## hexo-theme-nameless ##
+##hexo-theme-nameless
 Seen once, remember more. :clap:　[Priview](https://lonelyliar.github.io/)  
 
 ![Priview](http://i4.buimg.com/4851/d9ceb071e8366baa.png)
 
-#### 关于主题：
+####关于主题：
 - 本主题不适合新手使用，使用前请确保具有前端基础.
 - Twitter风格的banner.
 - 全站Pjax. 上方的加载条仿写了[NProgress](https://github.com/rstacruz/nprogress).
@@ -13,30 +13,30 @@ Seen once, remember more. :clap:　[Priview](https://lonelyliar.github.io/)
 
 
 <br>
-## Version
+##Version
 v1.0
 
 
 <br>
-## Quick Start
-#### Install
+##Quick Start
+####Install
 
 `$ git clone https://github.com/LonelyLiaR/hexo-theme-nameless themes/nameless`
 
 <br>
-#### Deploy
+####Deploy
 
 修改站点根目录下的`_config.yml`中的`theme`值为`nameless`.
 
 <br>
-#### Update
+####Update
 
 	cd theme/nameless  
 	git pull
 
 
-## 配置
-#### 主题配置
+##配置
+####主题配置
 
 主题配置文件在主题目录下的`_config.yml`，请根据自己需要修改使用。  
 
@@ -77,7 +77,7 @@ v1.0
 
 
 <br>
-#### 标签, 友链和关于页面的配置
+####标签, 友链和关于页面的配置
 
 请在站点根目录下的`source`文件夹中新建文件夹`tags`、`links`、`about`.  
 并在各个文件夹中新建一个`index.md`, 设置`layout`属性为该文件夹的名字.  
@@ -85,7 +85,7 @@ v1.0
 
 
 <br>
-#### 语言配置
+####语言配置
 
 现只支持两种语言. 简体中文与英文. 默认为英文.  
 如需切换请修改站点根目录下的`_config.yml`中`language`的值.  
