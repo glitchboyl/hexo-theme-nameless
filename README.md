@@ -1,9 +1,11 @@
-## hexo-theme-nameless  
+﻿hexo-theme-nameless  
+================
+
 Seen once, remember more. :clap:　[Priview](https://lonelyliar.github.io/)    
 
 ![Priview](http://i4.buimg.com/4851/d9ceb071e8366baa.png)  
 
-#### 关于主题：  
+**关于主题：** 
 - 本主题不适合新手使用，使用前请确保具有前端基础.
 - Twitter风格的banner.
 - 全站Pjax. 上方的加载条仿写了[NProgress](https://github.com/rstacruz/nprogress).
@@ -13,68 +15,72 @@ Seen once, remember more. :clap:　[Priview](https://lonelyliar.github.io/)
 
 
 <br>
-## Version  
+**Version**  
 v1.0  
 
 
 <br>
-## Quick Start  
-#### Install  
+**Quick Start**  
+####**Install**  
 
-`$ git clone https://github.com/LonelyLiaR/hexo-theme-nameless themes/nameless`  
+``` bash
+$ git clone https://github.com/LonelyLiaR/hexo-theme-nameless themes/nameless
+```
 
 <br>
-#### Deploy
+####**Deploy**
 
 修改站点根目录下的`_config.yml`中的`theme`值为`nameless`.  
 
 <br>
-#### Update  
+####**Update**  
 
-	cd theme/nameless  
-	git pull
+``` bash
+cd theme/nameless  
+git pull
+```
 
-
-## 配置  
+**配置**  
 #### 主题配置  
 
 主题配置文件在主题目录下的`_config.yml`，请根据自己需要修改使用。  
 
-	# 导航. 显示名对应主题目录下的languages配置. value为跳转url.
- 	nav:
-    	home: '/'
-    	archives: '/archives'
-    	tags: '/tags'
-    	links: '/links'
-    	about: '/about'
+```
+# 导航. 显示名对应主题目录下的languages配置. value为跳转url.
+nav:
+  home: '/'
+  archives: '/archives'
+  tags: '/tags'
+  links: '/links'
+  about: '/about'
 
-  	# 标签. key为标签路由, value为标签名.
-    # 由于本人不喜欢路由里出现中文, 但标签名又得有中文.
-  	tags:
-    	example: 例子
+# 标签. key为标签路由, value为标签名.
+# 由于本人不喜欢路由里出现中文, 但标签名又得有中文.
+tags:
+  example: 例子
 
-  	# 社交网络. 显示名对应主题目录下的languages配置. value为跳转url.
-  	socials:
-    	github: https://github.com/LonelyLiaR
-    	twitter: https://twitter.com/LonelyLiaR8523
-    	zhihu: https://www.zhihu.com/people/loleon-8523
-    	cloudmusic: http://music.163.com/#/user/home?id=64860394
-        weibo: http://weibo.com/lonelyliar8523
+# 社交网络. 显示名对应主题目录下的languages配置. value为跳转url.
+socials:
+  github: https://github.com/LonelyLiaR
+  twitter: https://twitter.com/LonelyLiaR8523
+  zhihu: https://www.zhihu.com/people/loleon-8523
+  cloudmusic: http://music.163.com/#/user/home?id=64860394
+  weibo: http://weibo.com/lonelyliar8523
 
-  	# 友链. key为代号.
-    # value中: nickname为昵称; desc为概述; url为友链地址;
-		# banner(横幅)和avatar(头像)均为Boolean值, true时显示自主设置的图片, false时显示默认样式.
-    # 自主设置的banner和avatar需在站点根目录下的links文件夹下的index文件夹里面新建一个文件夹
-  存放一张banner.png和avatar.png. 新建的文件夹名与key一样.
-    # 如下面的例子, key为example, 所以在站点根目录下的links文件夹下的index文件夹里新建
-  一个example文件, 并放入banner.png和avatar.png就完成自主设置了.
-  	friends:
-    	example: { nickname: 'nickname', desc: 'desc', url: 'https://www.google.com/', banner: false, avatar: false }
+# 友链. key为代号.
+# value中: nickname为昵称; desc为概述; url为友链地址;
+# banner(横幅)和avatar(头像)均为Boolean值, true时显示自主设置的图片, false时显示默认样式.
+# 自主设置的banner和avatar需在站点根目录下的links文件夹下的index文件夹里面新建一个文件夹
+   存放一张banner.png和avatar.png. 新建的文件夹名与key一样.
+# 如下面的例子, key为example, 所以在站点根目录下的links文件夹下的index文件夹里新建
+   一个example文件, 并放入banner.png和avatar.png就完成自主设置了.
+friends:
+  example: { nickname: 'nickname', desc: 'desc', url: 'https://www.google.com/', banner: false, avatar: false }
 
-  	# 显示的icon. favicon为网页图标. appleicon为iOS系统上的Safari设为桌面程序是显示的图标.
-  	favicon: /favicon.ico
-  	appleicon: /apple.ico
-
+# 显示的icon. favicon为网页图标. appleicon为iOS系统上的Safari设为桌面程序是显示的图标.
+favicon: /favicon.ico
+appleicon: /apple.ico
+```
 
 <br>
 #### 标签, 友链和关于页面的配置  
