@@ -90,6 +90,13 @@ appleicon: /apple.ico
 
              
              
+**博客与个人的信息, 头像和banner图的配置**  
+
+博客与个人的信息请在站点根目录下的`_config.yml`中修改.  
+头像和banner图请在主题目录下的`source/images`中替换`avatar.png`和`banner.png`即可.
+
+             
+             
 **标签, 友链和关于页面的配置**  
 
 请在站点根目录下的`source`文件夹中新建文件夹`tags`、`links`、`about`.  
