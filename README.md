@@ -14,14 +14,12 @@ Seen once, remember more. :clap:　[Priview](https://lonelyliar.github.io/)
 - 已内置[Disqus评论系统](https://disqus.com)，需在站点根目录下的`_config.yml`设置`disqus_shortname`.
 - 兼容问题还没测试过... 如有问题请提[issues](https://github.com/LonelyLiaR/hexo-theme-nameless/issues).  
 
-
-<br>
+             
 Version
 ----------------
 v1.0  
 
-
-<br>
+             
 Quick Start  
 ----------------
 **Install**  
@@ -30,12 +28,12 @@ Quick Start
 $ git clone https://github.com/LonelyLiaR/hexo-theme-nameless themes/nameless
 ```
 
-<br>
+             
 **Deploy**
 
 修改站点根目录下的`_config.yml`中的`theme`值为`nameless`.  
 
-<br>
+             
 **Update**  
 
 ``` bash
@@ -86,7 +84,7 @@ favicon: /favicon.ico
 appleicon: /apple.ico
 ```
 
-<br>
+             
 **标签, 友链和关于页面的配置**  
 
 请在站点根目录下的`source`文件夹中新建文件夹`tags`、`links`、`about`.  
@@ -94,7 +92,7 @@ appleicon: /apple.ico
 关于页的内容请在`about`文件夹下的`index.md`中进行编写.
 
 
-<br>
+             
 **语言配置**  
 
 现只支持两种语言. 简体中文与英文. 默认为英文.  
