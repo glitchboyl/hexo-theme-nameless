@@ -5,6 +5,7 @@ Seen once, remember more. :clap:　[Priview](https://lonelyliar.github.io/)
 
 ![Priview](http://i4.buimg.com/4851/d9ceb071e8366baa.png)  
 
+             
 关于主题：
 ----------------
 - 本主题不适合新手使用，使用前请确保具有前端基础.
@@ -14,11 +15,13 @@ Seen once, remember more. :clap:　[Priview](https://lonelyliar.github.io/)
 - 已内置[Disqus评论系统](https://disqus.com)，需在站点根目录下的`_config.yml`设置`disqus_shortname`.
 - 兼容问题还没测试过... 如有问题请提[issues](https://github.com/LonelyLiaR/hexo-theme-nameless/issues).  
 
-             
+           
+               
 Version
 ----------------
 v1.0  
 
+            
              
 Quick Start  
 ----------------
@@ -41,6 +44,7 @@ cd theme/nameless
 git pull
 ```
 
+             
 配置
 ----------------
 **主题配置**  
@@ -73,9 +77,9 @@ socials:
 # value中: nickname为昵称; desc为概述; url为友链地址;
 # banner(横幅)和avatar(头像)均为Boolean值, true时显示自主设置的图片, false时显示默认样式.
 # 自主设置的banner和avatar需在站点根目录下的links文件夹下的index文件夹里面新建一个文件夹
-   存放一张banner.png和avatar.png. 新建的文件夹名与key一样.
+# 存放一张banner.png和avatar.png. 新建的文件夹名与key一样.
 # 如下面的例子, key为example, 所以在站点根目录下的links文件夹下的index文件夹里新建
-   一个example文件, 并放入banner.png和avatar.png就完成自主设置了.
+# 一个example文件, 并放入banner.png和avatar.png就完成自主设置了.
 friends:
   example: { nickname: 'nickname', desc: 'desc', url: 'https://www.google.com/', banner: false, avatar: false }
 
@@ -85,13 +89,14 @@ appleicon: /apple.ico
 ```
 
              
+             
 **标签, 友链和关于页面的配置**  
 
 请在站点根目录下的`source`文件夹中新建文件夹`tags`、`links`、`about`.  
 并在各个文件夹中新建一个`index.md`, 设置`layout`属性为该文件夹的名字.  
 关于页的内容请在`about`文件夹下的`index.md`中进行编写.
 
-
+             
              
 **语言配置**  
 
