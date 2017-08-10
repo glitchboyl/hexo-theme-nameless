@@ -13,7 +13,7 @@ input:-ms-input-placeholder { font-family: 'Microsoft JhengHei UI',Microsoft Jhe
 .back-to-top .tip { font-size: 14px; display: none; visibility: hidden; float: right; margin-top: 5px; margin-left: 15px; padding: 0 7px; opacity: 0; color: #FFFFFF; border-radius: 4px; background-color: #404040; }
 .back-to-top .tip:before { position: absolute; margin-top: 5px; margin-left: -25px; content: ''; border: 9px solid transparent; border-right: 14px solid #404040; }
 
-.main-container { padding-top: 2px; background-color: #FFFFFF; }
+.main-container { background-color: #FFFFFF; }
 .main-container a { transition: color .3s ease; -webkit-transform: translateZ(0); -moz-transform: translateZ(0); -o-transform: translateZ(0); transform: translateZ(0); color: #555555; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 .main-container a:hover { cursor: pointer; color: #2DB4D8 !important; }
 
