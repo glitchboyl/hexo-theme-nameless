@@ -70,22 +70,37 @@ input:-ms-input-placeholder { font-family: 'Microsoft JhengHei UI',Microsoft Jhe
 .main-container .content-container { position: relative; padding-bottom: 150px; }
 .main-container .content-container section { position: relative; width: 540px; margin: 0 auto; padding-top: 50px; }
 .main-container .content-container section.articles-container .article-container { position: relative; padding: 20px 0; border-bottom: 1px solid #EBEBEB; background: #FFFFFF; }
-.main-container .content-container section.articles-container .article-container .article-header { margin-bottom: 20px; }
+.main-container .content-container section.articles-container .article-container .article-header,
+.main-container .content-container section.articles-container .article-container .article-body { margin-bottom: 20px; }
 .main-container .content-container section.articles-container .article-container .article-header .title { font-size: 28px; line-height: 45px; transition: color .3s ease; -webkit-transform: translateZ(0); -moz-transform: translateZ(0); -o-transform: translateZ(0); transform: translateZ(0); color: #333333; }
-.main-container .content-container section.articles-container .article-container .article-header .title:hover { cursor: pointer; color: #2DB4D8; }
-.main-container .content-container section.articles-container .article-container .article-header .info { font-size: 16px; margin-top: 3px; color: #999999; }
+.main-container .content-container section.articles-container .article-container .article-header .title:hover,
+.main-container .content-container section.articles-container .article-container .article-header .info .tag:hover,
+.main-container .content-container section.article-container .article-holder .article-header .info .tag:hover,
+.main-container .content-container section.article-container .article-holder .article-footer .article-nav .prev a:hover,
+.main-container .content-container section.article-container .article-holder .article-footer .article-nav .next a:hover { cursor: pointer; color: #2DB4D8; }
+.main-container .content-container section.articles-container .article-container .article-header .info,
+.main-container .content-container section.article-container .article-holder .article-header .info { font-size: 16px; margin-top: 3px; color: #999999; }
 .main-container .content-container section.articles-container .article-container .article-header .info .date,
 .main-container .content-container section.articles-container .article-container .article-header .info .read-number,
-.main-container .content-container section.articles-container .article-container .article-header .info .reply-number { margin-right: 10px; }
-.main-container .content-container section.articles-container .article-container .article-header .info .read-number:before { font-family: FontAwesome; margin-right: 5px; content: '\f06e'; color: #666666; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-.main-container .content-container section.articles-container .article-container .article-header .info .reply-number:before { font-family: FontAwesome; margin-right: 5px; content: '\f112'; color: #666666; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-.main-container .content-container section.articles-container .article-container .article-header .info .tags { font-size: 15px; margin-left: 10px; }
-.main-container .content-container section.articles-container .article-container .article-header .info .tags:before { font-family: FontAwesome; content: '\f02b'; color: #555555; }
-.main-container .content-container section.articles-container .article-container .article-header .info .tag { margin-right: 5px; transition: color .3s ease; -webkit-transform: translateZ(0); -moz-transform: translateZ(0); -o-transform: translateZ(0); transform: translateZ(0); color: #999999; }
-.main-container .content-container section.articles-container .article-container .article-header .info .tag:hover { cursor: pointer; color: #2DB4D8; }
-.main-container .content-container section.articles-container .article-container .article-body { margin-bottom: 20px; }
+.main-container .content-container section.articles-container .article-container .article-header .info .reply-number,
+.main-container .content-container section.article-container .article-holder .article-header .info .date,
+.main-container .content-container section.article-container .article-holder .article-header .info .read-number,
+.main-container .content-container section.article-container .article-holder .article-header .info .reply-number { margin-right: 10px; }
+.main-container .content-container section.articles-container .article-container .article-header .info .read-number:before,
+.main-container .content-container section.article-container .article-holder .article-header .info .read-number:before { font-family: FontAwesome; margin-right: 5px; content: '\f06e'; color: #666666; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.main-container .content-container section.articles-container .article-container .article-header .info .reply-number:before,
+.main-container .content-container section.article-container .article-holder .article-header .info .reply-number:before { font-family: FontAwesome; margin-right: 5px; content: '\f112'; color: #666666; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.main-container .content-container section.articles-container .article-container .article-header .info .tags,
+.main-container .content-container section.article-container .article-holder .article-header .info .tags { font-size: 15px; margin-left: 10px; }
+.main-container .content-container section.articles-container .article-container .article-header .info .tags:before,
+.main-container .content-container section.article-container .article-holder .article-header .info .tags:before { font-family: FontAwesome; content: '\f02b'; color: #555555; }
+.main-container .content-container section.articles-container .article-container .article-header .info .tag,
+.main-container .content-container section.article-container .article-holder .article-header .info .tag { margin-right: 5px; transition: color .3s ease; -webkit-transform: translateZ(0); -moz-transform: translateZ(0); -o-transform: translateZ(0); transform: translateZ(0); color: #999999; }
 .main-container .content-container section.articles-container .article-container .article-body .priview { font-size: 18px; margin-bottom: 20px; color: #000000; }
-.main-container .content-container section.articles-container .article-container .article-body .priview img { margin: 5px 0; }
+.main-container .content-container section.articles-container .article-container .article-body .priview img,
+.main-container .content-container section.article-container .article-holder .article-body .content-holder .content img { margin: 5px 0; }
+.main-container .content-container section.articles-container .article-container .article-body .priview img.github-emoji,
+.main-container .content-container section.article-container .article-holder .article-body .content-holder .content img.github-emoji { margin-top: 0; margin-bottom: -2px; }
 .main-container .content-container section.articles-container .article-container .article-body .read-more { font-size: 16px; transition: color .3s ease; -webkit-transform: translateZ(0); -moz-transform: translateZ(0); -o-transform: translateZ(0); transform: translateZ(0); color: #999999; }
 .main-container .content-container section.articles-container .article-container .article-body .read-more:hover { cursor: pointer; text-decoration: underline; color: #2DB4D8; }
 .main-container .content-container section.articles-container .loading-more,
@@ -94,22 +109,15 @@ input:-ms-input-placeholder { font-family: 'Microsoft JhengHei UI',Microsoft Jhe
 
 .main-container .content-container section.article-container .article-holder { position: relative; padding-bottom: 40px; background: #FFFFFF; }
 .main-container .content-container section.article-container .article-holder .article-header { margin-bottom: 50px; }
-.main-container .content-container section.article-container .article-holder .article-header .title { font-size: 28px; line-height: 45px; color: #333333; }
-.main-container .content-container section.article-container .article-holder .article-header .info { font-size: 16px; margin-top: 3px; color: #999999; }
-.main-container .content-container section.article-container .article-holder .article-header .info .date,
-.main-container .content-container section.article-container .article-holder .article-header .info .read-number,
-.main-container .content-container section.article-container .article-holder .article-header .info .reply-number { margin-right: 10px; }
-.main-container .content-container section.article-container .article-holder .article-header .info .read-number:before { font-family: FontAwesome; margin-right: 5px; content: '\f06e'; color: #666666; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-.main-container .content-container section.article-container .article-holder .article-header .info .reply-number:before { font-family: FontAwesome; margin-right: 5px; content: '\f112'; color: #666666; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-.main-container .content-container section.article-container .article-holder .article-header .info .tags { font-size: 15px; margin-left: 10px; }
-.main-container .content-container section.article-container .article-holder .article-header .info .tags:before { font-family: FontAwesome; content: '\f02b'; color: #555555; }
-.main-container .content-container section.article-container .article-holder .article-header .info .tag { margin-right: 5px; transition: color .3s ease; -webkit-transform: translateZ(0); -moz-transform: translateZ(0); -o-transform: translateZ(0); transform: translateZ(0); color: #999999; }
-.main-container .content-container section.article-container .article-holder .article-header .info .tag:hover { cursor: pointer; color: #2DB4D8; }
+.main-container .content-container section.article-container .article-holder .article-header .title { font-size: 28px; line-height: 45px; color: #333333; } 
 .main-container .content-container section.article-container .article-holder .article-body .content-holder { padding-bottom: 60px; border-bottom: 1px solid #EBEBEB; }
 .main-container .content-container section.article-container .article-holder .article-body .content-holder .content { font-size: 17px; color: #000000; }
-.main-container .content-container section.article-container .article-holder .article-body .content-holder .content img { margin: 5px 0; }
-.main-container .content-container section.article-container .article-holder .article-body .content-holder .content .heimu { color: #252525; background-color: #252525; }
-.main-container .content-container section.article-container .article-holder .article-body .content-holder .content .heimu:hover { color: #FFFFFF; }
+.main-container .content-container section.article-container .article-holder .article-body .content-holder .content .black-cover { color: #252525; background-color: #252525; }
+.main-container .content-container section.article-container .article-holder .article-body .content-holder .content .black-cover:hover { color: #FFFFFF; }
+.main-container .content-container section.article-container .article-holder .article-body .content-holder .content .black-cover img.github-emoji { opacity: 0; }
+.main-container .content-container section.article-container .article-holder .article-body .content-holder .content .black-cover:hover img.github-emoji { opacity: 1; }
+.main-container .content-container section.article-container .article-holder .article-body .content-holder .content .white-lie { color: #FFFFFF; }
+.main-container .content-container section.article-container .article-holder .article-body .content-holder .content .white-lie img.github-emoji { opacity: 0; }
 .main-container .content-container section.article-container .article-holder .article-footer .article-nav { font-size: 15px; padding: 10px 0; white-space: nowrap; }
 .main-container .content-container section.article-container .article-holder .article-footer .article-nav .prev { display: inline-block; width: 50%; text-align: left; }
 .main-container .content-container section.article-container .article-holder .article-footer .article-nav .next { display: inline-block; width: 50%; text-align: right; }
@@ -117,44 +125,42 @@ input:-ms-input-placeholder { font-family: 'Microsoft JhengHei UI',Microsoft Jhe
 .main-container .content-container section.article-container .article-holder .article-footer .article-nav .next.none,
 .main-container .content-container section.article-container .article-holder .article-footer .article-nav .prev a,
 .main-container .content-container section.article-container .article-holder .article-footer .article-nav .next a { transition: color .3s ease; -webkit-transform: translateZ(0); -moz-transform: translateZ(0); -o-transform: translateZ(0); transform: translateZ(0); color: #555555; }
-.main-container .content-container section.article-container .article-holder .article-footer .article-nav .prev a:hover,
-.main-container .content-container section.article-container .article-holder .article-footer .article-nav .next a:hover { cursor: pointer; color: #2DB4D8; }
-.main-container .content-container section.article-container .article-holder .article-footer .article-nav .prev.none:before { content: ''; }
-.main-container .content-container section.article-container .article-holder .article-footer .article-nav .prev a:before { font-family: FontAwesome; margin-right: 3px; content: '\f104'; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.main-container .content-container section.article-container .article-holder .article-footer .article-nav .prev.none:before,
 .main-container .content-container section.article-container .article-holder .article-footer .article-nav .next.none:after { content: ''; }
+.main-container .content-container section.article-container .article-holder .article-footer .article-nav .prev a:before { font-family: FontAwesome; margin-right: 3px; content: '\f104'; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 .main-container .content-container section.article-container .article-holder .article-footer .article-nav .next a:after { font-family: FontAwesome; margin-left: 3px; content: '\f105'; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 .main-container .content-container .comments-container { margin-top: 40px; }
 
-.main-container .content-container section.archives-container .archives-holder { position: relative; z-index: 0; }
-.main-container .content-container section.archives-container .archives-holder:after { position: absolute; z-index: -1; top: 8px; left: 0; width: 4px; height: 99%; margin-left: -2px; content: ''; background-color: #EBEBEB; }
-.main-container .content-container section.archives-container .archives-holder p { font-size: 18px; position: relative; margin: 20px 0; padding-bottom: 3px; padding-left: 20px; transition: border-bottom .5s ease; -webkit-transform: translateZ(0); -moz-transform: translateZ(0); -o-transform: translateZ(0); transform: translateZ(0); border-bottom: 1px dashed #CCCCCC; }
-.main-container .content-container section.archives-container .archives-holder p:hover { border-bottom: 1px dashed #222222; }
-.main-container .content-container section.archives-container .archives-holder .point { position: absolute; z-index: 1; top: 8px; left: 0; width: 8px; height: 8px; margin-left: -4px; transition: background-color .3s ease; -webkit-transform: translateZ(0); -moz-transform: translateZ(0); -o-transform: translateZ(0); transform: translateZ(0); border: 1px solid #FFFFFF; border-radius: 50%; background-color: #BBBBBB; }
-.main-container .content-container section.archives-container .archives-holder p:hover .point { background-color: #222222; }
+.main-container .content-container section.archives-container .archives-holder,
+.main-container .content-container section.tag-container .tag-holder { position: relative; z-index: 0; }
+.main-container .content-container section.archives-container .archives-holder:after,
+.main-container .content-container section.tag-container .tag-holder:after { position: absolute; z-index: -1; top: 8px; left: 0; width: 4px; height: 99%; margin-left: -2px; content: ''; background-color: #EBEBEB; }
+.main-container .content-container section.archives-container .archives-holder p,
+.main-container .content-container section.tag-container .tag-holder p { font-size: 18px; position: relative; margin: 20px 0; padding-bottom: 3px; padding-left: 20px; transition: border-bottom .5s ease; -webkit-transform: translateZ(0); -moz-transform: translateZ(0); -o-transform: translateZ(0); transform: translateZ(0); border-bottom: 1px dashed #CCCCCC; }
+.main-container .content-container section.archives-container .archives-holder p:hover,
+.main-container .content-container section.tag-container .tag-holder p:hover { border-bottom: 1px dashed #222222; }
+.main-container .content-container section.archives-container .archives-holder .point,
+.main-container .content-container section.tag-container .tag-holder .point { position: absolute; z-index: 1; top: 8px; left: 0; width: 8px; height: 8px; margin-left: -4px; transition: background-color .3s ease; -webkit-transform: translateZ(0); -moz-transform: translateZ(0); -o-transform: translateZ(0); transform: translateZ(0); border: 1px solid #FFFFFF; border-radius: 50%; background-color: #BBBBBB; }
+.main-container .content-container section.archives-container .archives-holder p:hover .point,
+.main-container .content-container section.tag-container .tag-holder p:hover .point { background-color: #222222; }
 .main-container .content-container section.archives-container .archives-holder .total { margin-top: 0; border-bottom: 0; }
 .main-container .content-container section.archives-container .archives-holder .year { font-size: 25px; font-weight: 600; margin: 40px 0; border-bottom: 0; }
 .main-container .content-container section.archives-container .archives-holder .total:hover,
-.main-container .content-container section.archives-container .archives-holder .year:hover { border-bottom: 0; }
+.main-container .content-container section.archives-container .archives-holder .year:hover,
+.main-container .content-container section.tag-container .tag-holder .tag-title:hover { border-bottom: 0; }
 .main-container .content-container section.archives-container .archives-holder .total:hover .point,
-.main-container .content-container section.archives-container .archives-holder .year:hover .point { background-color: #BBBBBB; }
-.main-container .content-container section.archives-container .archives-holder .date-time { font-size: 13px; position: absolute; margin-top: -1px; color: #555555; }
-.main-container .content-container section.archives-container .archives-holder .title { margin-left: 45px; color: #333333; }
+.main-container .content-container section.archives-container .archives-holder .year:hover .point,
+.main-container .content-container section.tag-container .tag-holder .tag-title:hover .point { background-color: #BBBBBB; }
+.main-container .content-container section.archives-container .archives-holder .date-time,
+.main-container .content-container section.tag-container .tag-holder .date-time { font-size: 13px; position: absolute; margin-top: -1px; color: #555555; }
+.main-container .content-container section.archives-container .archives-holder .title,
+.main-container .content-container section.tag-container .tag-holder .title { margin-left: 45px; color: #333333; }
 
 .main-container .content-container section.tags-container .tags-holder .title { margin-bottom: 40px; }
 .main-container .content-container section.tags-container .tags-holder a { display: inline-block; margin-right: 10px; }
 
-.main-container .content-container section.tag-container .tag-holder { position: relative; z-index: 0; }
-.main-container .content-container section.tag-container .tag-holder:after { position: absolute; z-index: -1; top: 8px; left: 0; width: 4px; height: 99%; margin-left: -2px; content: ''; background-color: #EBEBEB; }
-.main-container .content-container section.tag-container .tag-holder p { font-size: 18px; position: relative; margin: 20px 0; padding-bottom: 3px; padding-left: 20px; transition: border-bottom .5s ease; -webkit-transform: translateZ(0); -moz-transform: translateZ(0); -o-transform: translateZ(0); transform: translateZ(0); border-bottom: 1px dashed #CCCCCC; }
-.main-container .content-container section.tag-container .tag-holder p:hover { border-bottom: 1px dashed #222222; }
-.main-container .content-container section.tag-container .tag-holder .point { position: absolute; z-index: 1; top: 8px; left: 0; width: 8px; height: 8px; margin-left: -4px; transition: background-color .3s ease; -webkit-transform: translateZ(0); -moz-transform: translateZ(0); -o-transform: translateZ(0); transform: translateZ(0); border: 1px solid #FFFFFF; border-radius: 50%; background-color: #BBBBBB; }
-.main-container .content-container section.tag-container .tag-holder p:hover .point { background-color: #222222; }
 .main-container .content-container section.tag-container .tag-holder .tag-title { margin-bottom: 40px; border-bottom: 0; }
-.main-container .content-container section.tag-container .tag-holder .tag-title:hover { border-bottom: 0; }
-.main-container .content-container section.tag-container .tag-holder .tag-title:hover .point { background-color: #BBBBBB; }
 .main-container .content-container section.tag-container .tag-holder .tag-title .tag-name { font-size: 25px; font-weight: 600; color: #222222; }
-.main-container .content-container section.tag-container .tag-holder .date-time { font-size: 13px; position: absolute; margin-top: -1px; color: #555555; }
-.main-container .content-container section.tag-container .tag-holder .title { margin-left: 45px; color: #333333; }
 
 .main-container .content-container section.links-container .links-holder { position: relative; }
 .main-container .content-container section.links-container .links-holder:after { font-size: 0; line-height: 0; display: block; visibility: hidden; clear: both; overflow: hidden; width: 0; height: 0; content: ''; }

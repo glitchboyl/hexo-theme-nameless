@@ -1,8 +1,7 @@
-﻿
-'use strict';
-(function(global) {
+﻿'use strict';
+(function (global) {
     //  Self introduction.
-    (function() {
+    (function () {
         var a = '─────────▄──────────────▄\r\n' +
             '────────▌▒█───────────▄▀▒▌\r\n' +
             '────────▌▒▒▀▄───────▄▀▒▒▒▐\r\n' +
@@ -25,11 +24,11 @@
         console.log('%c' + a, 'color:#2DB4D8;');
     })();
     //  All links binding PJAX.
-    (function() {
+    (function () {
         _Pjax('a:not([target])', '.content-container');
         if (_Ls('.nav a')) {
-            _LS(_Ls('.nav a')).forEach(function(that) {
-                that.onclick = function() {
+            _LS(_Ls('.nav a')).forEach(function (that) {
+                that.onclick = function () {
                     _LS(_Ls('.nav a.active')).removeClass('active');
                     _LS(this).addClass('active');
                 };
@@ -37,36 +36,36 @@
         };
     })();
 
-    //  Some trick.
-    (function() {
+    //  Some tricks.
+    (function () {
         LProgress.afterDone = changeActive;
-        _Ls('.back-to-top .button').onclick = function(e) {
-            var T = setInterval(function() {
+        _Ls('.back-to-top .button').onclick = function (e) {
+            var T = setInterval(function () {
                 document.body.scrollTop = document.body.scrollTop - 100;
                 document.body.scrollTop < 0 ? document.body.scrollTop = 0 : '';
                 document.body.scrollTop == 0 ? clearTimeout(T) : '';
             }, 10);
         };
-        _Ls('.back-to-top .button').onmouseover = function() {
+        _Ls('.back-to-top .button').onmouseover = function () {
             if (navigator.userAgent.indexOf('Trident') != -1 || navigator.userAgent.indexOf('Edge') != -1) {
                 _Ls('.back-to-top .tip').style.cssText = 'display: block; opacity: 1; visibility: visible';
                 console.log(_Ls('.back-to-top .tip').style.cssText);
-                this.onmouseout = function() {
+                this.onmouseout = function () {
                     _Ls('.back-to-top .tip').style.cssText = 'display: none; opacity: 0; visibility: hidden';
                 };
             } else {
                 _LS(_Ls('.back-to-top .tip')).fadeIn(300);
-                this.onmouseout = function() {
+                this.onmouseout = function () {
                     _LS(_Ls('.back-to-top .tip')).fadeOut(300);
                 };
             };
         };
-        _LS(_Ls('.social-networks .item')).forEach(function(item) {
-            item.onmouseover = function() {
+        _LS(_Ls('.social-networks .item')).forEach(function (item) {
+            item.onmouseover = function () {
                 if (_LS(_LS(this).parent()).child('.tip')) {
                     var tip = _LS(_LS(this).parent()).child('.tip');
                     _LS(tip).fadeIn(300);
-                    this.onmouseout = function() {
+                    this.onmouseout = function () {
                         _LS(tip).fadeOut(300);
                     };
                 };
@@ -81,12 +80,12 @@
                         'class': 'nav-button'
                     }, _Ls('.nav-container'));
                 };
-                _Ls('.nav-container .nav-button').onclick = function(e) {
+                _Ls('.nav-container .nav-button').onclick = function (e) {
                     _LS(this).toggleClass('active');
                     _LS(_Ls('.nav-container .nav')).toggleClass('open');
                     SB();
                 };
-                document.onclick = function() {
+                document.onclick = function () {
                     !_LS(_Ls('.nav-container .nav-button')).hasClass('active') ? {} : _LS(_Ls('.nav-container .nav-button')).removeClass('active');
                     !_LS(_Ls('.nav-container .nav')).hasClass('open') ? {} : _LS(_Ls('.nav-container .nav')).removeClass('open');
                 };
@@ -100,11 +99,11 @@
         adapt();
     })();
 
-    global.onpopstate = function(e) {
+    global.onpopstate = function (e) {
         _Config.page = 1;
     };
-    _LS(global).on('scroll', function(e) {
-        if ((document.body.scrollTop >= 256 && navigator.userAgent.indexOf('FireFox') == -1) || (document.documentElement.scrollTop >= 256 && navigator.userAgent.indexOf('Firefox') != -1)) {
+    _LS(global).on('scroll', function (e) {
+        if ((document.body.scrollTop && document.body.scrollTop >= 256) || (document.documentElement.scrollTop && document.documentElement.scrollTop >= 256)) {
             !_LS(_Ls('.navbar-container')).hasClass('is-locked') ? (_LS(_Ls('.navbar-container')).addClass('is-locked'), _Ls('.content-container').style.cssText += 'margin-top: 49px;') : '';
             if (_LS(_Ls('.back-to-top')).css('display') == 'none' || _LS(_Ls('.back-to-top')).css('visibility') == 'hidden') {
                 _Ls('.back-to-top').style.cssText += 'visibility: visible; opacity: 1; display: block';
@@ -121,10 +120,10 @@
             };
             LProgress.start();
             _Config.page += 1;
-            setTimeout(function() {
+            setTimeout(function () {
                 _Ajax({
                     url: '/page/' + _Config.page + '/',
-                    success: function(r) {
+                    success: function (r) {
                         var container = _Create('html', {
                             'innerHTML': r
                         });
@@ -136,14 +135,14 @@
                         };
                         _Ls('.articles-container').innerHTML += _LS(container).child('.articles-container').innerHTML + lm.outerHTML;
                         _Pjax('.content-container a:not([target])', '.content-container');
-                        _LS(_Ls('.content-container a:not([target])')).forEach(function(that) {
-                            that.onclick = function() {
+                        _LS(_Ls('.content-container a:not([target])')).forEach(function (that) {
+                            that.onclick = function () {
                                 _Config.page = 1;
                             };
                         });
                         LProgress.done();
                     },
-                    error: function(error) {
+                    error: function (error) {
                         console.error('Failed to load !');
                     }
                 });
