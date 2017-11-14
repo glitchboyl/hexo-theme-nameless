@@ -3,7 +3,7 @@
 
 Seen once, remember more. :clap:　[Priview](https://lonelyliar.github.io/)    
 
-![Priview](http://i2.bvimg.com/616646/1deb29c559af6b8a.png)  
+![Priview](http://ozep0l2jz.bkt.clouddn.com/1510661538.jpg)  
 
              
 关于主题：
