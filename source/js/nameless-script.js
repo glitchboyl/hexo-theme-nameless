@@ -41,9 +41,15 @@
         LProgress.afterDone = changeActive;
         _Ls('.back-to-top .button').onclick = function (e) {
             var T = setInterval(function () {
-                document.body.scrollTop = document.body.scrollTop - 100;
-                document.body.scrollTop < 0 ? document.body.scrollTop = 0 : '';
-                document.body.scrollTop == 0 ? clearTimeout(T) : '';
+                if(document.body.scrollTop){
+                    document.body.scrollTop = document.body.scrollTop - 100;
+                    document.body.scrollTop < 0 ? document.body.scrollTop = 0 : '';
+                    document.body.scrollTop == 0 ? clearTimeout(T) : '';
+                } else if(document.documentElement.scrollTop){
+                    document.documentElement.scrollTop = document.documentElement.scrollTop - 100;
+                    document.documentElement.scrollTop < 0 ? document.documentElement.scrollTop = 0 : '';
+                    document.documentElement.scrollTop == 0 ? clearTimeout(T) : '';
+                }
             }, 10);
         };
         _Ls('.back-to-top .button').onmouseover = function () {
