@@ -98,7 +98,7 @@ input:-ms-input-placeholder { font-family: 'Microsoft JhengHei UI',Microsoft Jhe
 .main-container .content-container section.article-container .article-holder .article-header .info .tag { margin-right: 5px; transition: color .3s ease; -webkit-transform: translateZ(0); -moz-transform: translateZ(0); -o-transform: translateZ(0); transform: translateZ(0); color: #999999; }
 .main-container .content-container section.articles-container .article-container .article-body .priview { font-size: 18px; margin-bottom: 20px; color: #000000; }
 .main-container .content-container section.articles-container .article-container .article-body .priview img,
-.main-container .content-container section.article-container .article-holder .article-body .content-holder .content img { margin: 5px 0; }
+.main-container .content-container section.article-container .article-holder .article-body .content-holder .content img { max-width: 100%; margin: 5px 0;}
 .main-container .content-container section.articles-container .article-container .article-body .priview img.github-emoji,
 .main-container .content-container section.article-container .article-holder .article-body .content-holder .content img.github-emoji { margin-top: 0; margin-bottom: -2px; }
 .main-container .content-container section.articles-container .article-container .article-body .read-more { font-size: 16px; transition: color .3s ease; -webkit-transform: translateZ(0); -moz-transform: translateZ(0); -o-transform: translateZ(0); transform: translateZ(0); color: #999999; }
