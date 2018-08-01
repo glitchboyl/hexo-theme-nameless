@@ -1,4 +1,4 @@
-﻿hexo-theme-nameless  
+﻿hexo-theme-nameless  ()
 ================
 
 Seen once, remember more. :clap:　[Priview](https://lonelyliar.github.io/)    
