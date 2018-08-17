@@ -1,7 +1,7 @@
 ﻿(BAN)hexo-theme-nameless  
 ================
 
-Seen once, remember more. :clap:　[Priview](https://lonelyliar.github.io/)    
+Seen once, remember more. :clap:　  
 
 ![Priview](http://ozep0l2jz.bkt.clouddn.com/1510661538.jpg)  
 
