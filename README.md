@@ -13,9 +13,9 @@ Seen once, remember more. :clap:　
 - ~全站Pjax. 上方的加载条仿写了[NProgress](https://github.com/rstacruz/nprogress).~
 - 支持自适应，安卓移动端体验较差，~~后续随缘优化~~ **应该不会更新了**.
 - ~已内置[Disqus评论系统](https://disqus.com)，需在站点根目录下的`_config.yml`设置`disqus_shortname`.~
-- ~兼容问题还没测试过... 如有问题请提[issues](https://github.com/LonelyLiaR/hexo-theme-nameless/issues). ~ 
+- ~兼容问题还没测试过... 如有问题请提[issues](https://github.com/glitchboyl/hexo-theme-nameless/issues). ~ 
 - **18.07.13 应该不会更新了. ~因为接下来会有一个可以代替nameless的nameless.**~ 
-- **[Nameless, 这是你从来没有玩过的全新版本！](https://github.com/LonelyLiaR/nameless)**
+- **[Nameless, 这是你从来没有玩过的全新版本！](https://github.com/glitchboyl/nameless)**
 
            
                
@@ -30,7 +30,7 @@ Quick Start
 **Install**  
 
 ``` bash
-$ git clone https://github.com/LonelyLiaR/hexo-theme-nameless themes/nameless
+$ git clone https://github.com/glitchboyl/hexo-theme-nameless themes/nameless
 ```
 
              
@@ -69,7 +69,7 @@ tags:
 
 # 社交网络. 显示名对应主题目录下的languages配置. value为跳转url.
 socials:
-  github: https://github.com/LonelyLiaR
+  github: https://github.com/glitchboyl
   twitter: https://twitter.com/LonelyLiaR8523
   zhihu: https://www.zhihu.com/people/loleon-8523
   cloudmusic: http://music.163.com/#/user/home?id=64860394
